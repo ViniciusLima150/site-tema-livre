@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conheça as 3 principais competições que um time brasileiro pode competir.">
-    <title>Início - Futebol Brasileiro e Libertadores</title>
+    <meta name="description" content="Participe do bolão de futebol e faça os seus palpites sobre qual será os campeões das principais competições brasileiras e a Copa Libertadores.">
+    <title>Cadastro — Futebol Brasileiro e Libertadores</title>
 </head>
 <body>
     <a href="#conteudo">Pular para o conteúdo</a>
+
     <header>
-        <h1>Futebol Brasileiro e Libertadores</h1>
+        <p>Futebol Brasileiro e Libertadores</p>
         <nav aria-label="Menu principal">
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -20,10 +21,172 @@
             </ul>
         </nav>
     </header>
-    <main id="conteudo">
-    </main>
+
+<main id="conteudo">
+    <h1>Bolão dos Campeonatos brasileiros e Libertadores</h1>
+
+    <p>
+        Participe do bolão e registre os seus palpites sobre quem será os campeões dos principais campeonatos do futebol brasileiro e da Copa Libertadores. Para participar do bolão, primeiramente você precisa preencher o formulário abaixo com seus dados pessoais e em seguida informar os seus palpites. Os palpites são sobre quem será o campeão de cada competição, quantos gols o clube vai marcar na final e qual é a sua competição favorita. Além disso, você pode informar se deseja acompanhar alguma competição em específico e deixar um comentário explicando o seu palpite. Lembre-se de que os campos identificados com (*) são obrigatórios para realizar o cadastro.
+    </p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Dados do participante</legend>
+
+            <p>
+                <label for="nome">Nome completo *</label>
+                <input type="text" id="nome" name="nome" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" autocomplete="tel"
+                       pattern="\(\d{2}\) \d{5}-\d{4}"
+                       title="Use o formato (47) 99999-9999">
+            </p>
+            <p>
+                <label for="nascimento">Data de nascimento *</label>
+                <input type="date" id="nascimento" name="nascimento" autocomplete="bday" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Palpite do Campeonato Brasileiro</legend>
+
+            <p>
+                <label for="campeao-brasileirao">Quem será o campeão? *</label>
+                <select id="campeao-brasileirao" name="campeao-brasileirao" required>
+                    <option value="">Escolha um time</option>
+                    <option value="flamengo">Flamengo</option>
+                    <option value="palmeiras">Palmeiras</option>
+                    <option value="corinthians">Corinthians</option>
+                    <option value="sao-paulo">São Paulo</option>
+                    <option value="santos">Santos</option>
+                    <option value="gremio">Grêmio</option>
+                    <option value="internacional">Internacional</option>
+                    <option value="atletico-mineiro">Atlético Mineiro</option>
+                    <option value="botafogo">Botafogo</option>
+                    <option value="fluminense">Fluminense</option>
+                </select>
+            </p>
+            <p>
+                <label for="pontos-brasileirao">Pontos do campeão (0 a 114)</label>
+                <input type="number" id="pontos-brasileirao" name="pontos-brasileirao" min="0" max="114" step="1">
+            </p>
+            <p>
+                <label for="media-brasileirao">Média de gols por jogo no campeonato (ex.: 2,5)</label>
+                <input type="number" id="media-brasileirao" name="media-brasileirao" min="0" max="10" step="0.1">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Palpite da Copa do Brasil</legend>
+
+            <p>
+                <label for="campeao-copa-brasil">Quem será o campeão? *</label>
+                <select id="campeao-copa-brasil" name="campeao-copa-brasil" required>
+                    <option value="">Escolha um time</option>
+                    <option value="flamengo">Flamengo</option>
+                    <option value="palmeiras">Palmeiras</option>
+                    <option value="corinthians">Corinthians</option>
+                    <option value="sao-paulo">São Paulo</option>
+                    <option value="santos">Santos</option>
+                    <option value="gremio">Grêmio</option>
+                    <option value="internacional">Internacional</option>
+                    <option value="atletico-mineiro">Atlético Mineiro</option>
+                    <option value="botafogo">Botafogo</option>
+                    <option value="fluminense">Fluminense</option>
+                </select>
+            </p>
+            <p>
+                <label for="gols-copa-brasil">Gols do campeão na final (0 a 10)</label>
+                <input type="number" id="gols-copa-brasil" name="gols-copa-brasil" min="0" max="10" step="1">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Palpite da Copa Libertadores</legend>
+
+            <p>
+                <label for="campeao-libertadores">Quem será o campeão? *</label>
+                <select id="campeao-libertadores" name="campeao-libertadores" required>
+                    <option value="">Escolha um time</option>
+                    <option value="flamengo">Flamengo</option>
+                    <option value="palmeiras">Palmeiras</option>
+                    <option value="river-plate">River Plate</option>
+                    <option value="boca-juniors">Boca Juniors</option>
+                    <option value="penarol">Peñarol</option>
+                    <option value="nacional">Nacional</option>
+                    <option value="sao-paulo">São Paulo</option>
+                    <option value="botafogo">Botafogo</option>
+                    <option value="fluminense">Fluminense</option>
+                    <option value="atletico-mineiro">Atlético Mineiro</option>
+                </select>
+            </p>
+            <p>
+                <label for="gols-libertadores">Gols do campeão na final (0 a 10)</label>
+                <input type="number" id="gols-libertadores" name="gols-libertadores" min="0" max="10" step="1">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências e regras</legend>
+
+            <fieldset>
+                <legend>Qual é a sua competição favorita? *</legend>
+                <p>
+                    <input type="radio" id="favorita-brasileirao" name="favorita" value="brasileirao" required>
+                    <label for="favorita-brasileirao">Campeonato Brasileiro</label>
+                </p>
+                <p>
+                    <input type="radio" id="favorita-copa-brasil" name="favorita" value="copa-do-brasil">
+                    <label for="favorita-copa-brasil">Copa do Brasil</label>
+                </p>
+                <p>
+                    <input type="radio" id="favorita-libertadores" name="favorita" value="libertadores">
+                    <label for="favorita-libertadores">Copa Libertadores</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Competições que você quer acompanhar</legend>
+                <p>
+                    <input type="checkbox" id="acomp-brasileirao" name="acompanhar" value="brasileirao">
+                    <label for="acomp-brasileirao">Campeonato Brasileiro</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="acomp-copa-brasil" name="acompanhar" value="copa-do-brasil">
+                    <label for="acomp-copa-brasil">Copa do Brasil</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="acomp-libertadores" name="acompanhar" value="libertadores">
+                    <label for="acomp-libertadores">Copa Libertadores</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="comentario">Quer explicar algum palpite? (até 300 caracteres)</label>
+                <textarea id="comentario" name="comentario" rows="4" maxlength="300"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" id="termos" name="termos" value="aceito" required>
+                <label for="termos">Li e aceito as regras do bolão *</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Enviar cadastro</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+</main>
+
     <footer>
-        <p>Vinicius Moreira Lima -- DSM3/2025 -- 2026</p>
+        <p>Vinicius Moreira Lima — DS25 M3 — 2026</p>
     </footer>
 </body>
 </html>
