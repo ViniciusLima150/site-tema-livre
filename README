@@ -1,21 +1,75 @@
-# Futebol Brasileiro
+# Futebol Brasileiro e Libertadores
 
-**Tema**: Campeonato Brasileiro, Copa Libertadores e Copa do Brasil
-**Estudante**: Vinicius Moreira Lima
-**Turma**: DSM3/2025
-**Unidade Curricular**: Programação de Aplicativos
-**Ano**: 2026
+**Tema:** Campeonato Brasileiro, Copa do Brasil e Copa Libertadores  
+**Estudante:** Vinicius Moreira Lima  
+**Turma:** DSM3/2025
+**Unidade curricular:** Programação de Aplicativos — 2026
 
 ## Sobre o projeto
 
+O projeto foi feito para apresentar informações sobre as três competições mais importantes do futebol brasileiro, sendo eles: Campeonato Brasileiro, Copa do Brasil e Copa Libertadores. O site junta explicações, curiosidades, dados de finais e um formulário de bolão para que os visitantes possam interagir com o site registrando seus palpites.
+
 ## Como abrir o site
-1. Baixe ou clone o repositório
-2. Mantenha os cinco arquivos HTML e a pasta 'img' na mesma pasta.
-3. Abra o 'index.html' no navegador e use o menu para navegar.
+
+1. Localize a pasta do projeto no computador.
+2. Abra a pasta que contém os arquivos HTML.
+3. Encontre o arquivo `index.html`.
+4. Clique duas vezes nele para abrir o site no navegador.
+5. Utilize o menu de navegação para acessar as demais páginas.
+
+**Observação:** os formulários são demonstrativos. Como o projeto não possui um sistema de servidor, os dados preenchidos não são enviados nem armazenados.
 
 ## Páginas
-**- `index.html` — Início:**
-**- `sobre.html` — Sobre:**
-**- `dados.html` — Dados:**
-**- `cadastro.html` — Cadastro:**
-**- `contato.html` — Contato:**
+
+- `index.html` — Página inicial com apresentação do tema e acesso às demais páginas.
+- `sobre.html` — Apresenta informações sobre o Campeonato Brasileiro, a Copa do Brasil e a Libertadores.
+- `dados.html` — Contém uma tabela com os resultados das finais da Libertadores de 2019 a 2026.
+- `cadastro.html` — Apresenta um formulário de bolão para registrar palpites sobre as três competições.
+- `contato.html` — Disponibiliza informações fictícias de contato e um formulário para envio de mensagens.
+
+## Decisões de semântica
+
+- `<section>`: usei para separar a página em assuntos, cada um com o seu título (`<h2>`). No `index.html`, cada competição tem a sua seção (Campeonato Brasileiro, Copa do Brasil e Copa Libertadores), além da apresentação do site. No `sobre.html`, usei para o grupo dos artigos, para o glossário e para as fontes. Escolhi `<section>` porque cada parte trata de um tema e precisa de título.
+- `<article>`: usei no `sobre.html`, uma vez para cada competição (Campeonato Brasileiro, Copa do Brasil e Copa Libertadores). Cada texto é completo e faria sentido sozinho, mesmo se fosse lido fora da página, por isso é um `<article>` e não uma `<section>`.
+- `<aside>`: usei no `sobre.html` para a curiosidade sobre o gol mais rápido da Libertadores. É uma informação a mais, que não faz parte dos textos principais e que a pessoa pode ler ou pular sem perder a explicação das competições.
+
+## Acessibilidade
+
+Foram utilizados recursos para facilitar a navegação e a compreensão do conteúdo, como:
+
+- Elementos HTML semânticos para organizar as páginas.
+- Identificação dos campos dos formulários por meio de `<label>`.
+- Indicação de campos obrigatórios com `required`.
+- Textos alternativos nas imagens, quando aplicável.
+- Link para acessar diretamente o conteúdo principal, quando presente na página.
+
+### Teste de teclado
+
+Foi possivel interagir com as mecanicas propostas pelas páginas utilizando Tab+Enter.
+
+## Validação
+
+- **W3C:**: todos os arquivos foram revisados no [Nu HTML Checker](https://validator.w3.org/nu/#textarea), todas as 5 páginas foram validadas.
+- **Lighthouse:** houve 3 resultados (`index.html`, `sobre.html` e `dados.html`) de 95/100 e 2 (`cadastro.html` e `contato.html`) de 96/100, pois o lighthouse identificou o seguinte problema: Touch targets do not have sufficient size or spacing, esse problema deve ser por conta da atividade não permitir CSS.
+
+## Fontes consultadas
+
+- CBF — https://www.cbf.com.br/ — Informações sobre o futebol brasileiro e as competições nacionais.
+- CONMEBOL — https://www.conmebol.com/ — Informações sobre a Copa Libertadores.
+- Google Maps — https://www.google.com/maps — Utilizado como referência para o link de localização da página de contato.
+
+## Imagens
+
+| Arquivo | Fonte | Licença |
+|---|---|---|
+| Logo_brasileirao.jpg - Realizei o desenho pelo paint - Logo do Brasileirão
+| Logo_copa_do_brasil.jpg - Realizei o desenho pelo paint - Logo da Copa do Brasil
+| Logo_libertadores.jpg - Realizei o desenho pelo paint - Logo da Libertadores
+
+## Dificuldades e como resolvi
+
+O meu principal problema foi na hora de me organizar, fiquei um pouco perdido no começo da atividade, mas consegui me localizar e encontrar a melhor maneira de realizar o que a atividade estava propondo.
+
+Na criação do cadastro fiquei na duvida de que tema fazer, pois fazer um simples cadastro para jogar futebol ficaria meio sem nexo e não faria sentido, dai me veio a ideia do bolão, algo que o visitante possa interagir com o site.
+
+Na hora de colocar as mensagens dos commits eu fiquei com bastante duvida do que colocar, e acabei decidindo adicionar apenas mensagens simples sobre o que foi feito.
